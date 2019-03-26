@@ -1,0 +1,44 @@
+2019-03-20 16:32:24,504 [Worker-11: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-03-20 16:33:29,787 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.hbt.semillero:semillero-padre:1.0-SNAPSHOT @ C:\Users\ccastano\Desktop\Semillero Java 2019\ambiente\semillero-padre\pom.xml.
+2019-03-20 16:33:48,161 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hbt.semillero.servicios:semillero-servicios:1.0-SNAPSHOT @ C:\Users\ccastano\Desktop\Semillero Java 2019\ambiente\semillero-padre\semillero-servicios\pom.xml.
+2019-03-20 16:33:48,282 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hbt.semillero.web:semillero-web:1.0-SNAPSHOT @ C:\Users\ccastano\Desktop\Semillero Java 2019\ambiente\semillero-padre\semillero-web\pom.xml.
+2019-03-20 16:33:48,761 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.EarLifecycleMapping lifecycle mapping for MavenProject: com.hbt.semillero:semillero-ear:1.0-SNAPSHOT @ C:\Users\ccastano\Desktop\Semillero Java 2019\ambiente\semillero-padre\semillero-ear\pom.xml.
+2019-03-20 16:34:17,929 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /semillero-servicios/src/main/java
+2019-03-20 16:34:17,931 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /semillero-servicios/src/main/resources
+2019-03-20 16:34:17,956 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /semillero-servicios/src/test/java
+2019-03-20 16:34:32,246 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /semillero-web/src/main/java
+2019-03-20 16:34:32,247 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /semillero-web/src/test/java
+2019-03-20 16:34:34,144 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 4 project(s) in 104 sec
+2019-03-20 16:39:50,600 [Worker-0: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-03-20 16:39:50,827 [Worker-0: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hbt.semillero.servicios:semillero-servicios:1.0-SNAPSHOT @ C:\Users\ccastano\Desktop\Semillero Java 2019\ambiente\semillero-padre\semillero-servicios\pom.xml.
+2019-03-20 16:39:51,182 [Worker-0: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /semillero-servicios/src/main/java
+2019-03-20 16:39:51,182 [Worker-0: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /semillero-servicios/src/main/resources
+2019-03-20 16:39:51,183 [Worker-0: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /semillero-servicios/src/test/java
+2019-03-20 16:39:51,729 [Worker-0: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for semillero-servicios
+2019-03-20 16:39:51,738 [Worker-0: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2019-03-20 16:40:47,109 [Worker-23: reload maven project] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for javax:javaee-api:jar:7.0 is missing, no dependency information available
+2019-03-20 16:41:01,796 [Worker-9: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-03-20 16:41:01,955 [Worker-9: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hbt.semillero.servicios:semillero-servicios:1.0-SNAPSHOT @ C:\Users\ccastano\Desktop\Semillero Java 2019\ambiente\semillero-padre\semillero-servicios\pom.xml.
+2019-03-20 16:41:01,960 [Worker-9: Updating Maven Project] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for javax:javaee-api:jar:7.0 is missing, no dependency information available
+2019-03-20 16:41:02,020 [Worker-9: Updating Maven Project] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for javax:javaee-api:jar:7.0 is missing, no dependency information available
+2019-03-20 16:41:02,179 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /semillero-servicios/src/main/java
+2019-03-20 16:41:02,180 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /semillero-servicios/src/main/resources
+2019-03-20 16:41:02,181 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /semillero-servicios/src/test/java
+2019-03-20 16:41:18,647 [Worker-9: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for semillero-servicios
+2019-03-20 16:41:18,654 [Worker-9: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 16 sec
+2019-03-20 16:41:45,130 [Worker-27: reload maven project] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for javax:javaee-api:jar:7.0 is missing, no dependency information available
+2019-03-20 16:47:21,579 [Worker-20: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-03-20 16:47:35,851 [Worker-20: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.hbt.semillero:semillero-padre:1.0-SNAPSHOT @ C:\Users\ccastano\Desktop\Semillero Java 2019\ambiente\semillero-padre\pom.xml.
+2019-03-20 16:47:35,982 [Worker-20: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.EarLifecycleMapping lifecycle mapping for MavenProject: com.hbt.semillero:semillero-ear:1.0-SNAPSHOT @ C:\Users\ccastano\Desktop\Semillero Java 2019\ambiente\semillero-padre\semillero-ear\pom.xml.
+2019-03-20 16:47:36,580 [Worker-20: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hbt.semillero.servicios:semillero-servicios:1.0-SNAPSHOT @ C:\Users\ccastano\Desktop\Semillero Java 2019\ambiente\semillero-padre\semillero-servicios\pom.xml.
+2019-03-20 16:47:36,587 [Worker-20: Updating Maven Project] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for javax:javaee-api:jar:7.0 is missing, no dependency information available
+2019-03-20 16:47:36,676 [Worker-20: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hbt.semillero.web:semillero-web:1.0-SNAPSHOT @ C:\Users\ccastano\Desktop\Semillero Java 2019\ambiente\semillero-padre\semillero-web\pom.xml.
+2019-03-20 16:47:39,640 [Worker-20: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /semillero-servicios/src/main/java
+2019-03-20 16:47:39,640 [Worker-20: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /semillero-servicios/src/main/resources
+2019-03-20 16:47:39,640 [Worker-20: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /semillero-servicios/src/test/java
+2019-03-20 16:47:40,273 [Worker-20: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /semillero-web/src/main/java
+2019-03-20 16:47:40,273 [Worker-20: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /semillero-web/src/test/java
+2019-03-20 16:47:41,742 [Worker-20: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for semillero-ear
+2019-03-20 16:47:41,826 [Worker-20: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for semillero-servicios
+2019-03-20 16:47:41,842 [Worker-20: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for semillero-web
+2019-03-20 16:47:41,862 [Worker-20: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 20 sec
