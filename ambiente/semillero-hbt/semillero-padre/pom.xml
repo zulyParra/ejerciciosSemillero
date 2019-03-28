@@ -4,7 +4,7 @@
 	<parent>
 		<artifactId>semillero</artifactId>
 		<groupId>com.hbt</groupId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.0-SNAPSHOT</version>
 	</parent>
 	<groupId>com.hbt.semillero</groupId>
 	<artifactId>semillero-padre</artifactId>
