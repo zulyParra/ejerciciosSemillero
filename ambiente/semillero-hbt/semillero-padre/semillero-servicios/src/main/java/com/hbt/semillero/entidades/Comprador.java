@@ -5,35 +5,36 @@ import java.util.Calendar;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 /**
- * Concepto de Herencia
  *
  */
 @Entity
-@Table(name="COMPRADOR")
-@Inheritance(strategy = InheritanceType.JOINED)
-public class Comprador extends Persona implements Serializable{
+@Table(name = "COMPRADOR")
+public class Comprador implements Serializable {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
-	@Column(name="ID_COMPRADOR")
+	@Id
+	@GeneratedValue (generator = "SEQ")
+	@Column(name = "ID_COMPRADOR")
 	private Long idComprador;
-	
-	@Column(name="FECHA_AFILIACION")
+
+	@Column(name = "FECHA_AFILIACION")
 	private Calendar fechaAfiliacion;
 
-
-	@Override
-	public String identificarTipoPersona() {
-		return "Soy un comprador llamado: " + obtenerNombreCompleto();
-	}
+	@OneToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "ID_PERSONA")
+	private Persona persona;
 
 	public String mostrarFechaIngreso() {
 		return fechaAfiliacion.getTime().toString();
@@ -45,6 +46,22 @@ public class Comprador extends Persona implements Serializable{
 
 	public void setFechaAfiliacion(Calendar fechaAfiliacion) {
 		this.fechaAfiliacion = fechaAfiliacion;
+	}
+
+	public Long getIdComprador() {
+		return idComprador;
+	}
+
+	public void setIdComprador(Long idComprador) {
+		this.idComprador = idComprador;
+	}
+
+	public Persona getPersona() {
+		return persona;
+	}
+
+	public void setPersona(Persona persona) {
+		this.persona = persona;
 	}
 
 }

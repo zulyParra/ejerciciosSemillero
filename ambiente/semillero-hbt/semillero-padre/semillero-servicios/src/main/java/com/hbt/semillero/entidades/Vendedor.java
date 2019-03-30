@@ -5,30 +5,33 @@ import java.util.Calendar;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "VENDEDOR")
-@Inheritance(strategy = InheritanceType.JOINED)
-public class Vendedor extends Persona implements Serializable{
+public class Vendedor implements Serializable {
 
 	/**
-	 * 
+	 * Serial por defecto
 	 */
 	private static final long serialVersionUID = 1L;
 
+	@Id
+	@GeneratedValue(generator = "SEQ")
 	@Column(name = "ID_VENDEDOR")
 	private Long idVendedor;
 
+	@OneToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "ID_PERSONA")
+	private Persona persona;
+
 	@Column(name = "FECHA_INGRESO")
 	private Calendar fechaIngreso;
-
-	@Override
-	public String identificarTipoPersona() {
-		return "Soy un vendedor llamado: " + obtenerNombreCompleto();
-	}
 
 	public String mostrarFechaIngreso() {
 		return fechaIngreso.getTime().toString();
@@ -40,6 +43,22 @@ public class Vendedor extends Persona implements Serializable{
 
 	public void setFechaIngreso(Calendar fechaIngreso) {
 		this.fechaIngreso = fechaIngreso;
+	}
+
+	public Long getIdVendedor() {
+		return idVendedor;
+	}
+
+	public void setIdVendedor(Long idVendedor) {
+		this.idVendedor = idVendedor;
+	}
+
+	public Persona getPersona() {
+		return persona;
+	}
+
+	public void setPersona(Persona persona) {
+		this.persona = persona;
 	}
 
 }

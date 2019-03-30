@@ -2,7 +2,9 @@ package com.hbt.semillero.entidades;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 /**
@@ -12,9 +14,11 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "MARCA")
+@SequenceGenerator(name = "SEQ", sequenceName = "SEQ_COMUN", initialValue = 0, allocationSize = 1)
 public class Marca {
 
 	@Id
+	@GeneratedValue (generator = "SEQ")
 	@Column(name = "ID_MARCA")
 	private Long idMarca;
 
