@@ -3,6 +3,7 @@ package com.hbt.semillero.entidades;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -18,6 +19,7 @@ import javax.persistence.Table;
 public class Linea {
 
 	@Id
+	@GeneratedValue (generator = "SEQ")
 	@Column(name = "ID_LINEA")
 	private Long idLinea;
 
@@ -53,6 +55,14 @@ public class Linea {
 
 	public void setMarca(Marca marca) {
 		this.marca = marca;
+	}
+
+	public Long getIdLinea() {
+		return idLinea;
+	}
+
+	public void setIdLinea(Long idLinea) {
+		this.idLinea = idLinea;
 	}
 
 }

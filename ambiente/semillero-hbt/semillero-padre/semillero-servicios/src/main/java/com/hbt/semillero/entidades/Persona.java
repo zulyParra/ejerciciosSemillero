@@ -4,9 +4,8 @@ import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
 import javax.persistence.Table;
 
 /**
@@ -14,8 +13,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "PERSONA")
-@Inheritance(strategy = InheritanceType.JOINED)
-public abstract class Persona implements Serializable {
+public class Persona implements Serializable {
 
 	/**
 	 * 
@@ -23,6 +21,7 @@ public abstract class Persona implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@GeneratedValue(generator = "SEQ")
 	@Column(name = "ID_PERSONA")
 	private Long idPersona;
 
@@ -42,9 +41,7 @@ public abstract class Persona implements Serializable {
 	private String apellidos;
 
 	@Column(name = "EDAD")
-	private int edad;
-
-	public abstract String identificarTipoPersona();
+	private Long edad;
 
 	/**
 	 * Obtiene el nombre completo de la persona.
@@ -99,12 +96,20 @@ public abstract class Persona implements Serializable {
 		this.apellidos = apellidos;
 	}
 
-	public int getEdad() {
+	public Long getEdad() {
 		return edad;
 	}
 
-	public void setEdad(int edad) {
+	public void setEdad(Long edad) {
 		this.edad = edad;
+	}
+
+	public Long getIdPersona() {
+		return idPersona;
+	}
+
+	public void setIdPersona(Long idPersona) {
+		this.idPersona = idPersona;
 	}
 
 }
