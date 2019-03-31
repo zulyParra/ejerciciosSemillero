@@ -16,6 +16,8 @@
 		<timestamp>${maven.build.timestamp}</timestamp>
 		<maven.build.timestamp.format>hh:mm aa dd/MM/yy</maven.build.timestamp.format>
 		<repository.central.enable>true</repository.central.enable>
+		<maven-clean-plugin.version>3.0.0</maven-clean-plugin.version>
+		<angular.build.phase>prepare-package</angular.build.phase>
 	</properties>
 
 	<modules>
@@ -184,19 +186,6 @@
 							</configuration>
 						</execution>
 						<execution>
-							<id>npm-install-lib-exec</id>
-							<goals>
-								<goal>exec</goal>
-							</goals>
-							<configuration>
-								<executable>npm</executable>
-								<arguments>
-									<argument>run</argument>
-									<argument>npm-lib</argument>
-								</arguments>
-							</configuration>
-						</execution>
-						<execution>
 							<id>npm-install-exec</id>
 							<goals>
 								<goal>exec</goal>
@@ -224,32 +213,8 @@
 								</arguments>
 							</configuration>
 						</execution>
-						<execution>
-							<id>npm-prepare-exec</id>
-							<goals>
-								<goal>exec</goal>
-							</goals>
-							<configuration>
-								<executable>npm</executable>
-								<arguments>
-									<argument>run</argument>
-									<argument>prepare</argument>
-								</arguments>
-							</configuration>
-						</execution>
-						<execution>
-							<id>npm-pack-exec</id>
-							<goals>
-								<goal>exec</goal>
-							</goals>
-							<configuration>
-								<executable>npm</executable>
-								<arguments>
-									<argument>run</argument>
-									<argument>pack-semillero</argument>
-								</arguments>
-							</configuration>
-						</execution>
+
+
 					</executions>
 				</plugin>
 				<plugin>
@@ -290,8 +255,5 @@
 		</pluginManagement>
 	</build>
 
-	<!-- <repositories> <repository> <id>central</id> <name>Central Repository</name> 
-		<url>http://repo.maven.apache.org/maven2</url> <layout>default</layout> <releases> 
-		<enabled>${repository.central.enable}</enabled> </releases> <snapshots> <enabled>${repository.central.enable}</enabled> 
-		</snapshots> </repository> </repositories> -->
+
 </project>
