@@ -20,6 +20,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\ambiente\semilleroHBT\ambiente\semillero-hbt\semillero-padre"/>
 			<item value="C:\Users\ccastano\Desktop\Semillero Java 2019\ambiente\semillero-padre"/>
 		</list>
 		<list key="projectNameTemplate">
