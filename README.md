@@ -4,5 +4,5 @@ En este repositorio se almacenan las fuentes basicas para emprender el semillero
 - Abordar con ejercicios practicos el aprendizaje de la creacion de una aplicacion web utilizando como tecnologia backend Java y como tecnologia frontend angular
 
 
-zuly
+
 
